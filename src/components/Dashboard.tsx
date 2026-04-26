@@ -153,7 +153,7 @@ function TransactionItem({ tx }: { tx: Transaction }) {
               {formatHash(tx.hash)}
               {tx.isFHE && (
                 <span className="bg-purple-500/10 text-purple-400 text-[10px] px-1.5 py-0.5 rounded border border-purple-500/20 uppercase tracking-wider font-bold">
-                  Shielded Call: {tx.data.slice(0, 10)}
+                  Shielded Call: {tx.data ? tx.data.slice(0, 10) : "N/A"}
                 </span>
               )}
             </div>

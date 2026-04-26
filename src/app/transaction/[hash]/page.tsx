@@ -112,7 +112,7 @@ export default function TransactionPage() {
                 <Card className="bg-[#0a0a0a] border-purple-500/30 overflow-hidden">
                     <CardHeader className="bg-purple-500/5 py-4 border-b border-purple-500/10">
                         <div className="flex items-center justify-between">
-                            <span className="text-xs font-mono text-purple-300">Selector: {tx.data.slice(0, 10)}</span>
+                            <span className="text-xs font-mono text-purple-300">Selector: {tx.data ? tx.data.slice(0, 10) : "0x"}</span>
                             <span className="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded font-bold uppercase">Encrypted Call</span>
                         </div>
                     </CardHeader>
